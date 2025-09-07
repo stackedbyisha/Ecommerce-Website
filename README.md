@@ -30,6 +30,7 @@ This project demonstrates authentication, CRUD APIs, filtering, and cart managem
 - React + Vite
 - Axios
 - LocalStorage (cart persistence)
+  
  Backend:
 - Node.js
 - Express.js
