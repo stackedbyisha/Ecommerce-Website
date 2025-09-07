@@ -26,11 +26,11 @@ This project demonstrates authentication, CRUD APIs, filtering, and cart managem
 
 🛠️ Tech Stack
 
-Frontend:
+ Frontend:
 - React + Vite
 - Axios
 - LocalStorage (cart persistence)
-Backend:
+ Backend:
 - Node.js
 - Express.js
 - JWT for authentication
@@ -40,5 +40,4 @@ Database:
 
 
 
-git clone https://github.com/YOUR-USERNAME/ecommerce-spa.git
-cd ecommerce-spa
+
