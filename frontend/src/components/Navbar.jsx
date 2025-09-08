@@ -28,7 +28,7 @@ export default function Navbar(){
 
   return (
     <div className="header container">
-      <div className="logo">Ecom Pro</div>
+      <div className="logo">Ecom Pro.</div>
       <div className="nav-actions">
         <Link to="/" className="link-btn">Products</Link>
         <Link to="/cart" className="link-btn">
