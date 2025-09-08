@@ -175,3 +175,15 @@ app.delete('/api/cart/:id', authMiddleware, (req, res) => {
   res.json({ success: true });
 });
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+const express = require("express");
+const cors = require("cors");
+const app = express();
+
+// Allow your frontend to access backend
+app.use(cors({
+  origin: "https://ecommercewebsite-isha.netlify.app",
+  credentials: true, // if you are using cookies
+}));
+
+// Or temporarily allow all origins (for testing)
+app.use(cors());
