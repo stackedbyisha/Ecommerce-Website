@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default function Cart(){
   const [cart, setCart] = React.useState([]);
-  const API = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const API = import.meta.env.VITE_API_URL || 'https://ecommerce-website-backend-gq3h.onrender.com';
 
   const load = async () => {
     const token = localStorage.getItem('token');

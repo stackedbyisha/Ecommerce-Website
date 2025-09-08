@@ -12,7 +12,7 @@ export default function Signup(){
   const submit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/auth/signup`, { email, password });
+      await axios.post(`${import.meta.env.VITE_API_URL || 'https://ecommerce-website-backend-gq3h.onrender.com'}/api/auth/signup`, { email, password });
       navigate('/login'); // after signup, go to login
     } catch (e) {
       setErr(e?.response?.data?.error || 'Signup failed');
