@@ -5,7 +5,7 @@ export default function ItemCard({ item, onAdd }) {
     <div className="card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <img
         className="product-img"
-        src={item.imageUrl}  // ab backend se guaranteed hai
+        src={item.imageUrl}  
         alt={item.title}
         style={{ borderRadius: 8, objectFit: 'cover', height: 180 }}
       />
