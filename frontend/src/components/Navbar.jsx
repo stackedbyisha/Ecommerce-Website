@@ -10,7 +10,7 @@ export default function Navbar(){
   React.useEffect(()=>{
     let mounted = true;
     if(token){
-      axios.get(`${import.meta.env.VITE_API_URL || 'https://ecommerce-website-backend-gq3h.onrender.com'}/api/cart`, {
+      axios.get(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/cart`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => { if(mounted) setCount(res.data.reduce((s,c)=> s + c.qty, 0)); })
